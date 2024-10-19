@@ -3,8 +3,9 @@ import React from "react";
 import { SeconderyButton } from "../ui/Button/style";
 import icon from "../../assets/img/icon.svg";
 import { ProductAllData } from "../Data/data";
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 export const ProductAll = () => {
+  
   return (
     <Box bgcolor={"#274c5b"} mb={"12px"}>
       <Container maxWidth="lg">
@@ -39,8 +40,7 @@ export const ProductAll = () => {
           </Stack>
           <Stack>
             <Grid2 container spacing={2}>
-              {ProductAllData.map((item) => {
-                const navigate = useNavigate();
+              {ProductAllData.map((item, id) => {
 
                 return (
                   <Grid2
@@ -70,6 +70,7 @@ export const ProductAll = () => {
                         />
                       </Box>
                       <Stack>
+                        <Link style={{textDecoration:"none"}} to={`product/detail/${id}`}>
                         <Typography
                           variant="body1"
                           mb={"15px"}
@@ -79,10 +80,10 @@ export const ProductAll = () => {
                               color: "#7eb693",
                             },
                           }}
-                          onClick={() => navigate(`/product/${item.id}`)}
                         >
                           {item.title}
                         </Typography>
+                        </Link>
                       </Stack>
                       <hr />
                       <Stack

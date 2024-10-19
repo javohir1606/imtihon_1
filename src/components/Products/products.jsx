@@ -1,9 +1,6 @@
-import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-import { Link, useNavigate } from "react-router-dom"; // React Router'dan foydalanamiz
-import { useParams } from "react-router-dom";
-import { ProductsData } from "../Data/data";
-import { CustomButton, SeconderyButton } from "../ui/Button/style";
+import { Link } from "react-router-dom"; 
 export const ProductsItem = () => {
   return (
     <Box pt={"194px"} pb={"40px"}>

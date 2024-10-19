@@ -10,6 +10,7 @@ import {
   PrametrayButton,
 } from "../ui/Button/style";
 import icon from "../../assets/img/icon.svg";
+import { RelatedCard } from "../Related/Related";
 export const ProductDetail = () => {
   const { id } = useParams();
 
@@ -126,6 +127,7 @@ export const ProductDetail = () => {
             </Typography>
           </Stack>
         </Box>
+        <RelatedCard />
         <Newsletter />
       </Container>
     </Box>
