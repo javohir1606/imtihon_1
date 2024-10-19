@@ -135,3 +135,38 @@ export const ProductAllData = [
     rating: star,
   }
 ]
+
+export const RelatedData = [
+  {
+    id: 1,
+    img: img2,
+    title: "Calabrese Broccoli",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 2,
+    img: img1,
+    title: "Fresh Banana Fruites",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 3,
+    img: img,
+    title: "White Nuts",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 4,
+    img: img3,
+    title: "Vegan Red Tomato",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  }
+]
