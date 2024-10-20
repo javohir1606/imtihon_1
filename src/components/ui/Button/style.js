@@ -43,3 +43,13 @@ export const DefoltButton = styled(Button)({
   fontSize: 20,
   color: "#fff",
 });
+
+export const ProductButton = styled(Button)({
+  fontWeight: 500,
+  fontSize: 20,
+  color: "#274c5b",
+  borderRadius: 49,
+  padding: "29px 20px",
+  background: "#ececec",
+  width: 339,
+});

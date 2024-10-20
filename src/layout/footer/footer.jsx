@@ -5,7 +5,7 @@ import { IstagramIcon } from "../../assets/icon/istagram";
 import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
-    <Box>
+    <Box pt={"100px"}>
       <Container>
         <Stack
           pb={"130px"}

@@ -2,8 +2,8 @@ import { Box, Container, Grid2, Stack } from "@mui/material";
 import React from "react";
 import banner from "../../assets/img/shop-banner.png";
 import { AboutData } from "../../components/Data/data";
-import { AboutCard } from "../../components/Aboutcard/about-card";
 import { ShopCard } from "../../components/shop-card/shop-card";
+import { Newsletter } from "../Newsletter/Newsletter";
 export const Shop = () => {
   return (
     <Box>
@@ -41,6 +41,7 @@ export const Shop = () => {
             ))}
           </Grid2>
         </Container>
+          <Newsletter />
       </Box>
     </Box>
   );

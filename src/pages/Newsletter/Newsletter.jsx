@@ -4,7 +4,7 @@ import img from "../../assets/img/newslatteer.png";
 import { DefoltButton } from "../../components/ui/Button/style";
 export const Newsletter = () => {
   return (
-    <Box pt={"100px"} pb={"150px"}>
+    <Box pt={"100px"}>
       <Container>
         <Stack
           sx={{

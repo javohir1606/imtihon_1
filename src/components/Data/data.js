@@ -11,6 +11,7 @@ import img8 from "../../assets/img/user_image8.png"
 import img10 from "../../assets/img/user_image10.png"
 import img11 from "../../assets/img/user_image11.png"
 // import photoA from "../../assets/img/photoA.png"
+import imgA from "../../assets/img/img2.svg"
 export const ProductsData = [
   {
     id: 1,
@@ -271,5 +272,33 @@ export const AboutData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
+  },
+]
+
+
+export const AboutCardData = [
+  {
+    id:1, 
+    img: imgA,
+    title: "Return Policy",
+    desc: "Simply dummy text of the printintypesetting industry."
+  },
+  {
+    id:2, 
+    img: imgA,
+    title: "100% Fresh",
+    desc: "Simply dummy text of the printintypesetting industry."
+  },
+  {
+    id:3, 
+    img: imgA,
+    title: "Support 24/7",
+    desc: "Simply dummy text of the printintypesetting industry."
+  },
+  {
+    id:4, 
+    img: imgA,
+    title: "Secured Payment",
+    desc: "Simply dummy text of the printintypesetting industry."
   },
 ]
