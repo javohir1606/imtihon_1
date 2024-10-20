@@ -4,18 +4,19 @@ import banner from "../../assets/img/about-banner.png";
 import { AboutUs } from "../../components/about-us/about-us";
 import { AboutAll } from "../../components/aboutAll/about-all";
 import { AboutCardData } from "../../components/Data/data";
-import {AboutFresh} from "../../components/aboutFresh/about-fresh";
+import { AboutFresh } from "../../components/aboutFresh/about-fresh";
 import { Experts } from "../../components/Experts/Experts";
 import { Newsletter } from "../Newsletter/Newsletter";
+import { AboutItem } from "../../components/Aboutitem/about-item";
 export const About = () => {
   return (
     <Box>
       <Stack pb={"68px"}>
         <img src={banner} alt="" />
       </Stack>
-       <AboutUs />
-       <AboutAll />
-       <Box  bgcolor={"#f9f8f8"} pb={"100px"}>
+      <AboutUs />
+      <AboutAll />
+      <Box bgcolor={"#f9f8f8"}>
         <Container xs={"lg"}>
           <Grid2
             sx={{
@@ -45,6 +46,7 @@ export const About = () => {
         </Container>
       </Box>
       <Experts />
+      <AboutItem />
       <Newsletter />
     </Box>
   );
