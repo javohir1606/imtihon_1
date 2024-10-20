@@ -23,7 +23,7 @@ export const ProductsItem = () => {
   );
 };
 
-export const ProductsCard = ({ id, img, title, cPrice, pPrice, rating }) => {
+export const ProductsCard = ({ id, img, title, cPrice, pPrice, rating, name }) => {
   return (
     <>
       <Container>
@@ -83,7 +83,7 @@ export const ProductsCard = ({ id, img, title, cPrice, pPrice, rating }) => {
                 background: "#274c5b",
               }}
             >
-              Vegetable
+              {name}
             </Typography>
           </Stack>
         </Box>

@@ -3,9 +3,8 @@ import React from "react";
 import { SeconderyButton } from "../ui/Button/style";
 import icon from "../../assets/img/icon.svg";
 import { ProductAllData } from "../Data/data";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 export const ProductAll = () => {
-  
   return (
     <Box bgcolor={"#274c5b"} mb={"12px"}>
       <Container maxWidth="lg">
@@ -41,7 +40,6 @@ export const ProductAll = () => {
           <Stack>
             <Grid2 container spacing={2}>
               {ProductAllData.map((item, id) => {
-
                 return (
                   <Grid2
                     item
@@ -59,7 +57,6 @@ export const ProductAll = () => {
                         borderRadius: "30px",
                         background: "#f9f8f8",
                         padding: "30px",
-                        
                       }}
                     >
                       <Box>
@@ -70,19 +67,22 @@ export const ProductAll = () => {
                         />
                       </Box>
                       <Stack>
-                        <Link style={{textDecoration:"none"}} to={`product/detail/${id}`}>
-                        <Typography
-                          variant="body1"
-                          mb={"15px"}
-                          sx={{
-                            cursor: "pointer",
-                            "&:hover": {
-                              color: "#7eb693",
-                            },
-                          }}
+                        <Link
+                          style={{ textDecoration: "none" }}
+                          to={`product/detail/${id}`}
                         >
-                          {item.title}
-                        </Typography>
+                          <Typography
+                            variant="body1"
+                            mb={"15px"}
+                            sx={{
+                              cursor: "pointer",
+                              "&:hover": {
+                                color: "#7eb693",
+                              },
+                            }}
+                          >
+                            {item.title}
+                          </Typography>
                         </Link>
                       </Stack>
                       <hr />
@@ -111,11 +111,34 @@ export const ProductAll = () => {
                         </Stack>
                       </Stack>
                     </Box>
+                    <Stack position={"relative"}>
+            <Typography
+              sx={{
+                position: "absolute",
+                top: "-380px",
+                left: "22px",
+                cursor: "pointer",
+                fontWeight: 600,
+                fontSize: 15,
+                textAlign: "center",
+                color: "#fff",
+                borderRadius: 8,
+                padding: "5px 12px 6px 12px",
+                width: 96,
+                padding: "5px 12px",
+                background: "#274c5b",
+              }}
+            >
+              {item.name}
+            </Typography>
+          </Stack>
                   </Grid2>
+
                 );
               })}
             </Grid2>
           </Stack>
+        
         </Stack>
       </Container>
     </Box>

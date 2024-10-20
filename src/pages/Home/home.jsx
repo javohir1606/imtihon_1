@@ -44,6 +44,7 @@ export const Home = () => {
                   cPrice={item.cPrice}
                   pPrice={item.pPrice}
                   rating={item.rating}
+                  name={item.name}
                   id={item.id}
                 />
               </Grid2>

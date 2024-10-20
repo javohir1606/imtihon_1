@@ -1,8 +1,11 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, IconButton, Stack, Typography } from "@mui/material";
 import React from "react";
 import logo from "../../assets/img/Logo.svg";
 import { IstagramIcon } from "../../assets/icon/istagram";
 import { Link } from "react-router-dom";
+import { ImgIcon } from "../../assets/icon/img";
+import { ImgIcon1 } from "../../assets/icon/img1";
+import { ImgIcon2 } from "../../assets/icon/img2";
 export const Footer = () => {
   return (
     <Box pt={"100px"}>
@@ -84,10 +87,18 @@ export const Footer = () => {
               Ipsum simply dummy text of the printing{" "}
             </Typography>
             <Stack direction={"row"} alignItems={"center"} gap={"15px"}>
-              <IstagramIcon />
-              <IstagramIcon />
-              <IstagramIcon />
-              <IstagramIcon />
+            <IconButton>
+            <IstagramIcon />
+            </IconButton>
+              <IconButton>
+              <ImgIcon />
+              </IconButton>
+              <IconButton>
+              <ImgIcon1 />
+              </IconButton>
+              <IconButton>
+                <ImgIcon2/>
+              </IconButton>
             </Stack>
           </Stack>
           <Stack borderLeft={"2px solid grey"} pl={"51px"} textAlign="start">

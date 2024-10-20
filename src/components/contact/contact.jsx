@@ -97,8 +97,19 @@ export const ContactCard = () => {
                       textAlign: "center",
                     }}
                   >
-                    <Typography>{item.title}</Typography>
-                    <Typography>{item.desc}</Typography>
+                    <Typography sx={{
+                      fontWeight: 800,
+                      fontSize: 50,
+                      textAlign: 'center',
+                      color: '#274c5b',
+                    }}>{item.title}</Typography>
+                    <Typography sx={{
+                      fontWeight: 600,
+                      fontSize: 18,
+                      lineHeight: '165%',
+                      textAlign: 'center',
+                      color: '#274c5b',
+                    }}>{item.desc}</Typography>
                   </Box>
                 </Box>
               </Box>

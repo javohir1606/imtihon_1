@@ -1,17 +1,17 @@
-import star from "../../assets/img/star.svg"
-import img from "../../assets/img/user_image.png"
-import img1 from "../../assets/img/user_image1.png"
-import img2 from "../../assets/img/user_image2.png"
-import img3 from "../../assets/img/user_image3.png"
-import img4 from "../../assets/img/user_image4.png"
-import img5 from "../../assets/img/user_image5.png"
-import img6 from "../../assets/img/user_image6.png"
-import img7 from "../../assets/img/user_image7.png"
-import img8 from "../../assets/img/user_image8.png"
-import img10 from "../../assets/img/user_image10.png"
-import img11 from "../../assets/img/user_image11.png"
+import star from "../../assets/img/star.svg";
+import img from "../../assets/img/user_image.png";
+import img1 from "../../assets/img/user_image1.png";
+import img2 from "../../assets/img/user_image2.png";
+import img3 from "../../assets/img/user_image3.png";
+import img4 from "../../assets/img/user_image4.png";
+import img5 from "../../assets/img/user_image5.png";
+import img6 from "../../assets/img/user_image6.png";
+import img7 from "../../assets/img/user_image7.png";
+import img8 from "../../assets/img/user_image8.png";
+import img10 from "../../assets/img/user_image10.png";
+import img11 from "../../assets/img/user_image11.png";
 // import photoA from "../../assets/img/photoA.png"
-import imgA from "../../assets/img/img2.svg"
+import imgA from "../../assets/img/img2.svg";
 export const ProductsData = [
   {
     id: 1,
@@ -20,6 +20,7 @@ export const ProductsData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
+    name: "Vegetable",
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ export const ProductsData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
+    name: "Fresh",
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ export const ProductsData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
+    name: "Millets",
   },
   {
     id: 4,
@@ -44,6 +47,7 @@ export const ProductsData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
+    name: "Vegetable",
   },
   {
     id: 5,
@@ -52,6 +56,7 @@ export const ProductsData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
+    name: "Health",
   },
   {
     id: 6,
@@ -60,6 +65,7 @@ export const ProductsData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
+    name: "Nuts",
   },
   {
     id: 7,
@@ -68,6 +74,7 @@ export const ProductsData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
+    name: "Fresh",
   },
   {
     id: 8,
@@ -76,34 +83,32 @@ export const ProductsData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
+    name: "Fresh",
   },
-]
-
-
-
+];
 
 export const ContactData = [
   {
-    id:1,
+    id: 1,
     title: "100%",
     desc: "Organic",
   },
   {
-    id:2,
+    id: 2,
     title: "285",
     desc: "Active Product",
   },
   {
-    id:3,
+    id: 3,
     title: "350+",
     desc: "Organic Orchads",
   },
   {
-    id:4,
+    id: 4,
     title: "25+",
     desc: "Years of Farming",
   },
-]
+];
 
 export const ProductAllData = [
   {
@@ -113,6 +118,7 @@ export const ProductAllData = [
     cPrice: "20.00",
     pPrice: "11.00",
     rating: star,
+    name: "Vegetable",
   },
   {
     id: 2,
@@ -121,6 +127,7 @@ export const ProductAllData = [
     cPrice: "20.00",
     pPrice: "11.00",
     rating: star,
+    name: "Vegetable",
   },
   {
     id: 3,
@@ -129,6 +136,7 @@ export const ProductAllData = [
     cPrice: "20.00",
     pPrice: "11.00",
     rating: star,
+    name: "Vegetable",
   },
   {
     id: 4,
@@ -137,8 +145,9 @@ export const ProductAllData = [
     cPrice: "20.00",
     pPrice: "11.00",
     rating: star,
-  }
-]
+    name: "Vegetable",
+  },
+];
 
 export const RelatedData = [
   {
@@ -172,9 +181,8 @@ export const RelatedData = [
     cPrice: "20.00",
     pPrice: "13.00",
     rating: star,
-  }
-]
-
+  },
+];
 
 export const AboutData = [
   {
@@ -273,32 +281,31 @@ export const AboutData = [
     pPrice: "13.00",
     rating: star,
   },
-]
-
+];
 
 export const AboutCardData = [
   {
-    id:1, 
+    id: 1,
     img: imgA,
     title: "Return Policy",
-    desc: "Simply dummy text of the printintypesetting industry."
+    desc: "Simply dummy text of the printintypesetting industry.",
   },
   {
-    id:2, 
+    id: 2,
     img: imgA,
     title: "100% Fresh",
-    desc: "Simply dummy text of the printintypesetting industry."
+    desc: "Simply dummy text of the printintypesetting industry.",
   },
   {
-    id:3, 
+    id: 3,
     img: imgA,
     title: "Support 24/7",
-    desc: "Simply dummy text of the printintypesetting industry."
+    desc: "Simply dummy text of the printintypesetting industry.",
   },
   {
-    id:4, 
+    id: 4,
     img: imgA,
     title: "Secured Payment",
-    desc: "Simply dummy text of the printintypesetting industry."
+    desc: "Simply dummy text of the printintypesetting industry.",
   },
-]
+];
