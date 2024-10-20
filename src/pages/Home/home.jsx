@@ -13,7 +13,6 @@ import { EconisCard } from "../../components/Econis/econis";
 import { OrganicCard } from "../../components/Organic/Organic";
 import { WeeklyCard } from "../../components/weekly/weekly";
 import { Newsletter } from "../Newsletter/Newsletter";
-import { RelatedCard } from "../../components/Related/Related";
 export const Home = () => {
   return (
     <div>

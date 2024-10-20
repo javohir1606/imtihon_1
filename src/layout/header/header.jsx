@@ -4,6 +4,7 @@ import logo from "../../assets/img/Logo.svg";
 import styled from "@emotion/styled";
 import { SearchIcon } from "../../assets/icon/search";
 import { IconKorzinka } from "../../assets/icon/korzinka";
+import { Link } from "react-router-dom";
 export const Header = () => {
   const LinkData = styled.p`
     font-family: var(--font-family);
@@ -21,12 +22,72 @@ export const Header = () => {
               <img src={logo} alt="logo" />
             </Stack>
             <Stack direction={"row"} gap={"30px"}>
-              <LinkData>Home</LinkData>
-              <LinkData> About </LinkData>
-              <LinkData>Pages </LinkData>
-              <LinkData>Shop</LinkData>
-              <LinkData>Projects</LinkData>
-              <LinkData>News</LinkData>
+              <Link
+                to="/"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: 700,
+                  fontSize: 20,
+                  color: "#274c5b",
+                }}
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: 700,
+                  fontSize: 20,
+                  color: "#274c5b",
+                }}
+              >
+                About
+              </Link>
+              <Link
+                to="/shop"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: 700,
+                  fontSize: 20,
+                  color: "#274c5b",
+                }}
+              >
+                Shop
+              </Link>
+              <Link
+                to="/pages"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: 700,
+                  fontSize: 20,
+                  color: "#274c5b",
+                }}
+              >
+                Pages
+              </Link>
+              <Link
+                to="/projects"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: 700,
+                  fontSize: 20,
+                  color: "#274c5b",
+                }}
+              >
+                Projects
+              </Link>
+              <Link
+                to="/news"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: 700,
+                  fontSize: 20,
+                  color: "#274c5b",
+                }}
+              >
+                News
+              </Link>
             </Stack>
           </Stack>
           <Stack direction={"row"} gap={"18px"} alignItems={"center"}>
