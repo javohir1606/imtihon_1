@@ -5,6 +5,8 @@ import { ProductsItem } from "./components/Products/products";
 import { ProductDetail } from "./components/productDetail/product-detail";
 import { About } from "./pages/About/about";
 import { Shop } from "./pages/Shop/Shop";
+import { Project } from "./components/Project/project";
+import { Newscard } from "./components/NewsCard/newscard";
 function App() {
   return (
     <>
@@ -13,6 +15,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />}></Route>
           <Route path="shop" element={<Shop />}></Route>
+          <Route path="projects" element={<Project />}></Route>
+          <Route path="news" element={<Newscard />}></Route>
           <Route>
             <Route path="/" element={<ProductsItem />} />
             <Route path="product/detail/:id" element={<ProductDetail />} />
