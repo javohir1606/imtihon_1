@@ -7,6 +7,9 @@ import img4 from "../../assets/img/user_image4.png"
 import img5 from "../../assets/img/user_image5.png"
 import img6 from "../../assets/img/user_image6.png"
 import img7 from "../../assets/img/user_image7.png"
+import img8 from "../../assets/img/user_image8.png"
+import img10 from "../../assets/img/user_image10.png"
+import img11 from "../../assets/img/user_image11.png"
 // import photoA from "../../assets/img/photoA.png"
 export const ProductsData = [
   {
@@ -169,4 +172,104 @@ export const RelatedData = [
     pPrice: "13.00",
     rating: star,
   }
+]
+
+
+export const AboutData = [
+  {
+    id: 1,
+    img: img2,
+    title: "Calabrese Broccoli",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 2,
+    img: img1,
+    title: "Fresh Banana Fruites",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 3,
+    img: img,
+    title: "White Nuts",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 4,
+    img: img3,
+    title: "Vegan Red Tomato",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 5,
+    img: img4,
+    title: "Mung Bean",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 6,
+    img: img5,
+    title: "Brown Hazelnut",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 7,
+    img: img6,
+    title: "Eggs",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 8,
+    img: img7,
+    title: "Zelco Suji Elaichi Rusk",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 9,
+    img: img8,
+    title: "Zelco Suji Elaichi Rusk",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 10,
+    img: img,
+    title: "Zelco Suji Elaichi Rusk",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 11,
+    img: img10,
+    title: "Zelco Suji Elaichi Rusk",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
+  {
+    id: 12,
+    img: img11,
+    title: "Zelco Suji Elaichi Rusk",
+    cPrice: "20.00",
+    pPrice: "13.00",
+    rating: star,
+  },
 ]

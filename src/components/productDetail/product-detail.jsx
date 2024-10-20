@@ -1,7 +1,7 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { ProductsData } from "../Data/data";
+import { AboutData, ProductsData } from "../Data/data";
 import { Newsletter } from "../../pages/Newsletter/Newsletter";
 import banner1 from "../../assets/img/banner1.png";
 import {
@@ -14,7 +14,8 @@ import { RelatedCard } from "../Related/Related";
 export const ProductDetail = () => {
   const { id } = useParams();
 
-  const product = ProductsData.find((item) => item.id === parseInt(id));
+  const product = ProductsData.find((item) => item.id === parseInt(id)) || AboutData.find(item => item.id === parseInt(id))
+
 
   if (!product) {
     return <p>Product not found</p>;

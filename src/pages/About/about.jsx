@@ -7,6 +7,7 @@ export const About = () => {
       <Stack pb={"68px"}>
         <img src={banner} alt="" />
       </Stack>
+
     </Box>
   );
 };

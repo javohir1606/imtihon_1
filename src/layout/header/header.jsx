@@ -1,11 +1,12 @@
 import { Box, Container, IconButton, Stack } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/img/Logo.svg";
 import styled from "@emotion/styled";
 import { SearchIcon } from "../../assets/icon/search";
 import { IconKorzinka } from "../../assets/icon/korzinka";
 import { Link } from "react-router-dom";
 export const Header = () => {
+  const [showSubmenu, setShowSubmenu] = useState(false);
   const LinkData = styled.p`
     font-family: var(--font-family);
     font-weight: 700;
@@ -55,17 +56,86 @@ export const Header = () => {
               >
                 Shop
               </Link>
-              <Link
-                to="/pages"
-                style={{
-                  textDecoration: "none",
-                  fontWeight: 700,
-                  fontSize: 20,
-                  color: "#274c5b",
-                }}
-              >
-                Pages
-              </Link>
+              <Stack direction={"column"} gap={"10px"}>
+      <Link
+        to="#"
+        style={{
+          textDecoration: "none",
+          fontWeight: 700,
+          fontSize: 20,
+          color: "#274c5b",
+        }}
+        onClick={() => setShowSubmenu(!showSubmenu)} // Toggle submenu
+      >
+        Pages
+      </Link>
+
+      {showSubmenu && ( 
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            position: "absolute", // Makes sure submenu appears below "Pages"
+            backgroundColor: "#fff",
+            padding: "10px",
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Optional shadow for dropdown effect
+            marginTop: "5px",
+            zIndex: 1, // Keeps the submenu above other content
+          }}
+        >
+          <Link
+            to="/services"
+            style={{
+              textDecoration: "none",
+              fontWeight: 500,
+              fontSize: 18,
+              color: "#274c5b",
+              marginBottom: "10px",
+            }}
+          >
+            Services
+          </Link>
+          <Link
+            to="/blog"
+            style={{
+              textDecoration: "none",
+              fontWeight: 500,
+              fontSize: 18,
+              color: "#274c5b",
+              marginBottom: "10px",
+            }}
+          >
+            Blog
+          </Link>
+          <Link
+            to="/portfolio"
+            style={{
+              textDecoration: "none",
+              fontWeight: 500,
+              fontSize: 18,
+              color: "#274c5b",
+              marginBottom: "10px",
+            }}
+          >
+            Portfolio
+          </Link>
+          <Link
+            to="/team"
+            style={{
+              textDecoration: "none",
+              fontWeight: 500,
+              fontSize: 18,
+              color: "#274c5b",
+            }}
+          >
+            Team
+          </Link>
+        </Box>
+      )}
+    </Stack>
+  
+
+
               <Link
                 to="/projects"
                 style={{
