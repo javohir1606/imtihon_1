@@ -65,7 +65,7 @@ export const Header = () => {
           fontSize: 20,
           color: "#274c5b",
         }}
-        onClick={() => setShowSubmenu(!showSubmenu)} // Toggle submenu
+        onClick={() => setShowSubmenu(!showSubmenu)} 
       >
         Pages
       </Link>
@@ -75,12 +75,12 @@ export const Header = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            position: "absolute", // Makes sure submenu appears below "Pages"
+            position: "absolute", 
             backgroundColor: "#fff",
             padding: "10px",
-            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Optional shadow for dropdown effect
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
             marginTop: "5px",
-            zIndex: 1, // Keeps the submenu above other content
+            zIndex: 1, 
           }}
         >
           <Link
